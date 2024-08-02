@@ -1,0 +1,774 @@
+  /*------------------NAVBAR----------------*/
+
+  .navbar {
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; /* fixed typo: changed 'between' to 'space-between' */
+    padding: 0.75rem 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: "Forum", serif;
+  }
+
+  .navbar-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; /* fixed typo: changed 'between' to 'space-between' */
+  }
+
+  .brand {
+    flex: 1;
+    display: flex;
+    justify-content: space-between; /* fixed typo: changed 'between' to 'space-between' */
+  }
+
+  .brand-link {
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.75rem;
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 0.5rem 0;
+    white-space: nowrap;
+    color: #4a5568;
+    text-decoration: none;
+  }
+
+  .nav-links {
+    display: none;
+    flex-grow: 1;
+    align-items: center;
+    
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-left: auto;
+  }
+
+  .nav-item {
+    margin: 0.5rem 0;
+  }
+
+  .nav-link {
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #4a5568;
+    transition: color 0.2s ease-in-out;
+    text-decoration: none;
+
+  }
+
+  .nav-link:hover {
+    color: #718096;
+  }
+
+  .nav-text {
+    margin-left: 0.5rem;
+    
+  }
+
+  @media (min-width: 1024px) {
+    .nav-links {
+      display: flex;
+    }
+
+    .nav-list {
+      flex-direction: row;
+    }
+
+    .nav-item {
+      margin: 0;
+    }
+  }
+
+    
+
+  /*------------------ABOUT_ME----------------*/
+
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    margin: 0 auto;
+    margin-top: 3.75rem; /* 60px */
+    text-align: center;
+    font-family: "Forum", serif;
+    max-width: 1200px;
+  }
+
+  .about-content {
+    margin-top: 4.75rem; /* 60px */
+    margin-bottom: 1.75rem; /* 60px */
+  }
+
+  .avatar {
+    margin: 0 auto;
+  }
+
+  .avatar-image {
+    width: 16rem; /* 52px */
+    height: 16rem; /* 52px */
+    border-radius: 25%;
+  }
+
+  .greeting {
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-top: 2rem; /* 8px */
+    padding-bottom: 1.5rem; /* 8px */
+    font-size: 1.875rem; /* 3xl */
+    color: #d69e2e; /* yellow-500 */
+    letter-spacing: 1px;
+
+  }
+
+  .introduction {
+    font-family: "Forum", serif;
+    font-weight: 600;
+    font-size: 1.5rem; /* xl */
+    color: #2d3748; /* gray-800 */
+    margin: 1rem; /* 2px */
+  }
+
+  .description {
+    width: 100%;
+    max-width: 66.666667%; /* 2/3 */
+    margin: 0 auto;
+    color: #718096; /* gray-500 */
+    font-size: 1.3rem; /* base */
+    line-height: 1.75rem; /* base */
+    padding-bottom: 1rem;
+  }
+
+  /*------------------CONTACT----------------*/
+
+  .contact-bar {
+    font-family: "Forum", serif;
+    text-align: center;
+  }
+  
+  .contact-container {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contact-info {
+    color: black;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .address{
+    color: black;
+  }
+  
+  .contact-info p {
+    margin: 0.5rem 0;
+  }
+
+  .contact-info a {
+    color: black; /* Set email and tel link text color to black */
+    text-decoration: underline; /* Remove underline from email and tel links */
+  }
+  
+  .contact-info a:hover,
+  .contact-info a:focus {
+    color: #718096; /* Ensure email and tel link text remains black on hover and focus */
+  }
+  
+  .contact-links {
+    display: flex;
+    font-size: 1.2rem;
+    gap: 2rem;
+  }
+  
+  .contact-links a {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #4a5568; /* Adjust color as needed */
+  }
+  
+  .contact-links a i {
+    margin-right: 0.5rem;
+  }
+  
+
+  /*------------------EDUCATION----------------*/
+
+  .education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Forum", serif;
+    margin: 1rem auto; /* 24px converted to rem */
+    padding: 0 1rem;
+    text-align: center;
+    line-height: 1.5;
+    padding-top: 2rem;
+    max-width: 1280px;
+  }
+
+  .education-heading {
+    font-weight: bolder;
+    padding-bottom: 1rem; /* 8px converted to rem */
+    font-size: 1.875rem; /* 3xl */
+    color: #d69e2e; /* yellow-500 */
+  }
+
+  .education-cards {
+    width: 100%;
+    max-width: 95%; /* 8/12 converted to percentage */
+    margin: 0 auto;
+  }
+
+  @media (min-width: 768px) {
+    .education-cards {
+      width: 80.333333%; /* 10/12 converted to percentage */
+    }
+  }
+
+  /*------------------EDUCATION_CARD----------------*/
+
+  .education-card {
+    display: flex;
+    background-color: #f5f9fb; /* gray-100 */
+    border-radius: 0.75rem; /* rounded-xl */
+    padding: 2rem; /* 8px converted to rem */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+    margin-bottom: 2rem; /* 6px converted to rem */
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) {
+    .education-card {
+      flex-direction: row;
+      padding: 0;
+    }
+  }
+  
+  .education-image {
+    width: 10rem; /* 40px converted to rem */
+    height: 10rem; /* 40px converted to rem */
+    border-radius: 25%;
+    margin: 1.5rem; /* 6px converted to rem */
+    display: block;
+  }
+  
+  .education-content {
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .education-content {
+      padding: 2rem; /* 8px converted to rem */
+      text-align: left;
+    }
+  }
+  
+  .education-title {
+    font-size: 1.3rem; /* lg */
+    font-weight: 600;
+    margin-bottom: 0.25rem; /* reduce margin-bottom */
+  }
+  
+  .education-subtitle {
+    font-size: 1.125rem; /* lg */
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0.25rem; 
+  }
+  
+  .education-time {
+    margin-top: 0; 
+    font-size: 1.1rem; 
+    color: #6f7882; 
+    margin-bottom: 0.25rem; /* 2px converted to rem */
+  }
+  
+  .education-description {
+    color: #4a5568; /* gray-500 */
+    font-size: 1.1rem; 
+    margin-top: 0.25rem; /* 2px converted to rem */
+  }
+  
+  /*------------------PROJECT----------------*/
+
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto; /* Adjusted for margin */
+    text-align: center;
+    line-height: 1.5;
+    font-family: "Forum", serif;
+    max-width: 1280px;
+
+  }
+  
+  .project-heading {
+    font-weight: 900;
+    font-weight: bolder;
+    padding-bottom: 2rem; /* 8px converted to rem */
+    font-size: 1.875rem; /* 3xl */
+    color: #d69e2e; /* yellow-500 */
+  }
+  
+  .project-cards {
+    width: 100%;
+    max-width: 85%; /* 10/12 converted to percentage */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  @media (min-width: 1024px) {
+    .project-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+
+  /*------------------PROJECT_CARD----------------*/
+  .project-card {
+    max-width: 100%;
+    border-radius: 0.75rem; /* rounded */
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+    border: 1px solid #c7d3e4; /* border-grey-lighter */
+    margin: 0.5rem; /* my-2 */
+    display: inline-block; /* Ensure cards are displayed inline */
+    vertical-align: top;
+  }
+  
+  .project-image-container {
+    width: 100%;
+    height: 300px; /* Set a fixed height for all images */
+    overflow: hidden;
+    position: relative; /* Positioning context for the image */
+  }
+  
+  .project-image {
+    position: absolute; /* Remove from document flow */
+    top: 0; /* Align to top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Centering trick */
+    width: 100%; /* Fill the width of the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the container */
+    object-position: center top; /* Ensure the top of the image is displayed */
+  }
+  
+  .project-content {
+    padding: 1.5rem; /* px-6 py-4 */
+  }
+  
+  .project-title {
+    font-weight: bold;
+    font-size: 1.25rem; /* text-xl */
+    margin: 0.5rem 0; /* m-2 */
+  }
+  
+  .project-time {
+    color: #616c7a; /* text-gray-400 */
+    font-size: 1rem; /* text-base */
+    margin: 0.25rem 0; /* m-1 */
+  }
+  
+  .project-description {
+    color: #4a5568; /* text-gray-500 */
+    font-size: 1.1rem; /* text-base */
+    text-align: left;
+  }
+  
+  .project-tags {
+    padding: 0 1.5rem; /* px-6 */
+  }
+  
+  .project-tag {
+    display: inline-block;
+    background-color: #e2e8f0; /* bg-grey-lighter */
+    border-radius: 9999px; /* rounded-full */
+    padding: 0.25rem 0.75rem; /* px-3 py-1 */
+    font-size: 1rem; /* text-sm */
+    font-weight: 600; /* font-semibold */
+    color: #4a5568; /* text-gray-500 */
+    margin: 0.25rem 0.3rem; /* m-1 */
+  }
+  
+  .project-demo {
+    margin: 1rem 0; /* my-4 */
+    padding-left: 1.5rem; /* pl-6 */
+  }
+  
+  .project-demo-link {
+    color: #d69e2e; /* text-yellow-500 */
+    font-size: 1rem; /* text-base */
+    text-align: left;
+  }
+  
+  @media (min-width: 1024px) {
+    .project-card {
+      margin: 0.5rem; /* my-2 */
+      margin-left: 1.5rem; /* lg:mx-6 */
+      margin-right: 1.5rem; /* lg:mx-6 */
+    }
+  
+    .project-container {
+      padding: 1rem;
+    }
+  }
+
+  /*------------------SKILLS----------------*/
+
+  .skill-container {
+    font-family: "Forum", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto 3rem auto; 
+    padding: 0 1rem; /* px-4 */
+    text-align: center;
+    line-height: 1.5;
+    max-width: 1280px;
+  }
+  
+  .skill-heading {
+    font-weight: 900;
+    font-size: 1.875rem; /* text-3xl */
+    color: #d69e2e; /* text-yellow-500 */
+    margin-bottom: 1.5rem; /* mb-6 */
+  }
+  
+  .skill-sections {
+    width: 83.333333%; /* md:w-8/12 */
+    max-width: 91.666667%; /* w-10/12 */
+    margin: 0 auto;
+  }
+  
+  .skill-footer {
+    font-family: "Forum", serif;
+    font-weight: 600;
+    font-size: 1.5rem; /* text-xl */
+    color: #2d3748; /* text-gray-800 */
+    margin-top: 2rem; /* mt-8 */
+  }
+  
+  /*------------------SKILL_CARD----------------*/
+  .skill-section-title {
+    font-family: "Forum", serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #2d3748; /* text-gray-800 */
+    margin-bottom: 5rem;
+  }
+  
+  .skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Auto-fill to ensure responsiveness */
+    justify-content: center;
+    gap: 3rem; /* Fixed gap between cards */
+    margin-top: 1rem; /* mt-4 */
+    margin-bottom: 5rem;;
+
+  }
+  
+  .skill-card {
+    margin: 0 auto; /* Center cards horizontally */
+    padding: 1rem; /* Increase padding for better spacing */
+    background-color: #f7fafc; /* bg-background-light */
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Increase shadow for better appearance */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and transform */
+    text-align: center; /* Center-align text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height to maintain square shape */
+  }
+  
+  .skill-card:hover {
+    background-color: #f1f1f1; /* hover:bg-gray-50 */
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+  
+  .skill-icon {
+    color: #718096; /* text-gray-500 */
+    margin-bottom: 0.5rem; /* Add spacing below icon */
+  }
+  
+  .custom-icon-size {
+    font-size: 3rem; /* Custom size for icons */
+  }
+  
+  .skill-name {
+    color: #4a5568; /* text-gray-600 */
+    padding-top: 0.5rem; /* pt-2 */
+  }
+  
+ /*------------------EXPERIENCE----------------*/
+ .experience-container {
+  font-family: "Forum", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 1200px;
+}
+
+.experience-heading {
+  font-weight: 900;
+  padding-bottom: 2rem;
+  font-size: 1.875rem; /* text-3xl */
+  color: #d69e2e; /* text-yellow-500 */
+}
+
+.experience-cards {
+  width: 83.333333%; /* md:w-8/12 */
+  max-width: 83.333333%; /* w-10/12 */
+  margin: 0 auto;
+}
+
+/*------------------EXPERIENCE_CARD----------------*/
+.education-card {
+  display: flex;
+  background-color: #f7fafc; /* gray-100 */
+  border-radius: 0.75rem; /* rounded-xl */
+  padding: 2rem; /* 8px converted to rem */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+  margin-bottom: 2.5rem; /* 6px converted to rem */
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .education-card {
+    flex-direction: row;
+    padding: 0;
+  }
+}
+
+.education-image {
+  width: 10rem; /* 40px converted to rem */
+  height: 10rem; /* 40px converted to rem */
+  border-radius: 25%;
+  margin: 1.5rem; /* 6px converted to rem */
+  display: block;
+}
+
+.education-content {
+  padding: 2rem; /* 8px converted to rem */
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .education-content {
+    padding: 2rem; /* 8px converted to rem */
+    text-align: left;
+  }
+}
+
+.education-title {
+  font-size: 1.3rem; /* lg */
+  font-weight: 600;
+}
+
+.education-role {
+  font-size: 1.125rem; /* lg */
+  font-style: italic;
+  color: #7c8794; /* gray-400 */
+  margin: 0.25rem 0; /* 1px converted to rem */
+}
+
+.education-time {
+  color: #8994a3; /* gray-400 */
+  margin-bottom: 0.5rem; /* 2px converted to rem */
+}
+
+.education-description {
+  color: #4a5568; /* gray-500 */
+  margin-top: 0.5rem; /* 2px converted to rem */
+}
+
+
+/*------------------Quote----------------*/
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 1200px;
+  margin-top: 3rem; /* mt-36 */
+  margin-bottom: 3rem; /* mb-24 */
+  font-family: "Forum", serif;
+}
+
+.quote-heading {
+  font-weight: 900;
+  padding-bottom: 2rem;
+  font-size: 1.875rem; 
+  color: #d69e2e; 
+  text-align: center;
+}
+
+.quote-content {
+  width: 83.333333%; 
+  max-width: 83.333333%; 
+  margin: 0 auto;
+}
+
+.quote-box {
+  background-color: #f7fafc; 
+  border-radius: 0.75rem; 
+  padding: 2rem; 
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+  margin-bottom: 1.5rem; 
+}
+
+.quote-text {
+  padding-top: 3rem; /* pt-12 */
+  padding-bottom: 1.5rem; /* pb-6 */
+  font-size: 1.4rem; /* text-xl */
+  padding-left: 0.5rem; /* px-2 */
+  padding-right: 0.5rem; /* px-2 */
+  text-align: center;
+}
+
+.quote-author {
+  font-size: 1.25rem; /* text-xl */
+  padding-left: 0.5rem; /* px-2 */
+  padding-right: 0.5rem; /* px-2 */
+  text-align: right; /* Align author to the right */
+  padding-right: 9%;
+}
+
+.quote-text2 {
+  padding-top: 1.5rem; /* pt-12 */
+  padding-bottom: 1.5rem; /* pb-6 */
+  font-size: 1.25rem; /* text-xl */
+  padding-left: 0.5rem; /* px-2 */
+  padding-right: 0.5rem; /* px-2 */
+  color: rgb(103, 116, 126);
+  text-align: center;
+}
+
+.download-resume{
+    font-family: "Forum", serif;
+    font-weight: 600;
+    font-size: 1.5rem; /* text-xl */
+    color: #2d3748; /* text-gray-800 */
+    margin-top: 2rem; /* mt-8 */
+  }
+
+
+
+/*------------------FOOTER----------------*/
+
+  .footer {
+    font-family: "Forum", serif;
+    background-color: #fffae0; /* gray-600 */
+    margin-top: 6rem; /* mt-24 */
+    padding: 2rem 0; /* py-24 */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  
+  .footer-content {
+    width: 91.666667%; /* 11/12 */
+    max-width: 66.666667%; /* md:w-8/12 */
+    margin: 0 auto;
+  }
+  
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 1rem; 
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .footer-content a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .footer-content a:hover,
+  .footer-content a:focus {
+    color: rgb(111, 103, 103); /* Ensure email and tel link text remains black on hover and focus */
+  }
+  
+  .footer-links a i {
+    margin-right: 0.5rem;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .footer-name {
+    font-size: 1.2rem; /* text-xl */
+    font-weight: bold;
+    color: #000000; /* yellow-500 */
+    margin: 0px; /* mb-4 */
+  }
+  
+  .footer-info {
+    display: flex;
+    flex-direction: column; /* Default to vertical layout */
+    align-items: center;
+    justify-content: center;
+    gap: 0.1rem; 
+    font-size: 1.2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .footer-info {
+      flex-direction: row; /* Horizontal layout for wider screens */
+      gap: 3rem; /* Adjust gap as needed */
+    }
+  }
+  
