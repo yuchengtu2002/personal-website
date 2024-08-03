@@ -23,10 +23,10 @@ export default function AboutMe() {
             I'm Yucheng Tu
           </p>
           {[
-            // Modify or add content here, each line separated by a comma:
-            "A third-year Computer Engineering student at the University of Toronto.",
-            "I love transforming ideas into code, making innovative solutions a reality.",
-            "I also love to play badminton and Nintendo games, as well as exploring new technologies.",
+            "As a third-year Computer Engineering student at the University of Toronto, ",
+            "I am passionate about transforming ideas into code and making innovative solutions a reality",
+            "My focus is on the fields of artificial intelligence, software, and deep learning." ,
+            " In my free time, I enjoy playing badminton and Nintendo games, as well as exploring new technologies.",
           ].map((item, index) => {
             return (
               <p key={index} className="description">

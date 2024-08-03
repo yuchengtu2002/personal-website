@@ -9,8 +9,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between; /* fixed typo: changed 'between' to 'space-between' */
-    padding: 0.75rem 1rem;
+    justify-content: space-between; 
+    padding: 0.25rem 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: "Forum", serif;
   }
@@ -22,13 +22,13 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between; /* fixed typo: changed 'between' to 'space-between' */
+    justify-content: space-between; 
   }
 
   .brand {
     flex: 1;
     display: flex;
-    justify-content: space-between; /* fixed typo: changed 'between' to 'space-between' */
+    justify-content: space-between; 
   }
 
   .brand-link {
@@ -106,15 +106,15 @@
     justify-content: center;
     padding: 0 1rem;
     margin: 0 auto;
-    margin-top: 3.75rem; /* 60px */
+    margin-top: 3.75rem; 
     text-align: center;
     font-family: "Forum", serif;
     max-width: 1200px;
   }
 
   .about-content {
-    margin-top: 4.75rem; /* 60px */
-    margin-bottom: 1.75rem; /* 60px */
+    margin-top: 4.75rem; 
+    margin-bottom: 1.75rem; 
   }
 
   .avatar {
@@ -122,18 +122,18 @@
   }
 
   .avatar-image {
-    width: 16rem; /* 52px */
-    height: 16rem; /* 52px */
+    width: 16rem; 
+    height: 16rem; 
     border-radius: 25%;
   }
 
   .greeting {
     font-weight: 900;
     text-transform: uppercase;
-    padding-top: 2rem; /* 8px */
-    padding-bottom: 1.5rem; /* 8px */
-    font-size: 1.875rem; /* 3xl */
-    color: #d69e2e; /* yellow-500 */
+    padding-top: 2rem; 
+    padding-bottom: 1.5rem; 
+    font-size: 1.875rem;
+    color: #d69e2e; 
     letter-spacing: 1px;
 
   }
@@ -141,18 +141,18 @@
   .introduction {
     font-family: "Forum", serif;
     font-weight: 600;
-    font-size: 1.5rem; /* xl */
-    color: #2d3748; /* gray-800 */
-    margin: 1rem; /* 2px */
+    font-size: 1.5rem; 
+    color: #2d3748; 
+    margin: 1rem; 
   }
 
   .description {
     width: 100%;
-    max-width: 66.666667%; /* 2/3 */
+    max-width: 75%; 
     margin: 0 auto;
-    color: #718096; /* gray-500 */
-    font-size: 1.3rem; /* base */
-    line-height: 1.75rem; /* base */
+    color: #718096; 
+    font-size: 1.3rem; 
+    line-height: 1.75rem; 
     padding-bottom: 1rem;
   }
 
@@ -311,9 +311,10 @@
   }
   
   .education-description {
-    color: #4a5568; /* gray-500 */
+    color: #4a5568; 
     font-size: 1.1rem; 
-    margin-top: 0.25rem; /* 2px converted to rem */
+    margin-top: 0.25rem; 
+    letter-spacing: 0.3px;
   }
   
   /*------------------PROJECT----------------*/
