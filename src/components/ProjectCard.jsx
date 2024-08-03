@@ -32,14 +32,26 @@ export default function ProjectCard(props) {
           ))}
       </div>
       <div className="project-demo">
-        {props.demoName && (
+        {props.demoName1 && (
           <a
             className="project-demo-link"
             target="_blank"
-            href={props.demoLink}
+            href={props.demoLink1}
             rel="noreferrer"
           >
-            {props.demoName}
+            {props.demoName1}
+          </a>
+        )}
+      </div>
+      <div className="project-demo">
+        {props.demoName2 && (
+          <a
+            className="project-demo-link"
+            target="_blank"
+            href={props.demoLink2}
+            rel="noreferrer"
+          >
+            {props.demoName2}
           </a>
         )}
       </div>

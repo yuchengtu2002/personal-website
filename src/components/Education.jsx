@@ -19,8 +19,10 @@ export default function Education() {
             subtitle: "Computer Engineering + PEY Co-op, Faculty of Applied Science and Engineering",
             time: "2022.9 - Present",
             descriptions: [
-              "I am currently a third-year student at the University of Toronto, Estimate to graduate in 2026.6. Current CGPA: 3.86/4.00.",
-              "I focus on areas such as artificial intelligence, machine learning, and software development.",
+              <div>
+                 <b>Current CGPA: 3.86/4.00</b> 
+              </div>,
+              "I am currently a third-year student at the University of Toronto, Estimate to graduate in 2026.6. I focus on areas such as artificial intelligence, machine learning, and software development.",
               <>
                 <div className="education-subtitle"> Awards: </div>
                 <ul>
