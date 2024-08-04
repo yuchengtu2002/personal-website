@@ -9,15 +9,15 @@ export default function Project() {
 
       <div className="project-cards">
         {[
-          // Modify or add project cards here
           {
             img: "hrca_project.png",
             title: "HRCA Machine-Learning Research Project",
             time: "2024.5 - 2024.9",
             descriptions: [
               "Research Project ( Summer 2024 ). Collaborated with the Hospital and the University of Toronto.",
-              "Developed PyTorch deep learning models (CNN, RNN, Transformers, Hybrid) to classify swallowing events as normal or abnormal using raw time-sequence data. Outperformed state-of-the-art models by 8% in accuracy.",
-              "Built a user-friendly PC application with Python and PyQt to connect with the HRCA device for real-time swallowing signal monitoring and analysis."
+              "Developed PyTorch deep learning models (CNN, RNN, Transformers, Hybrid) to classify swallowing events. Outperformed state-of-the-art models by 8% in accuracy.",
+              "Built a user-friendly PC application with Python and PyQt to connect with the HRCA device for real-time swallowing signal monitoring and analysis.",
+              "Constructing a conference paper for submission to Annual International Conference of the IEEE Engineering in Medicine and Biology Society" 
             ],
             tags: [
               "Python",
@@ -27,6 +27,20 @@ export default function Project() {
               "PyQt",
               "PyTorth",
             ],
+          },
+          {
+            img: "village_TD.png",
+            title: "Village Tower Defense Game",
+            time: "2024.7",
+            descriptions: [
+              "Developed a strategic tower defense game using C++ and SDL2 libraries. Implemented various types of towers and enemies, along with wave progression and resource management systems.",
+              "Designed and integrated custom graphics and animations. Built an efficient game loop to handle real-time updates, collision detection, and rendering, ensuring smooth gameplay performance.",
+            ],
+            tags: ["Javascipt", "Nodejs", "React", "HTML&CSS", "Web Development","Full-Stack"],
+            demoName1: "🎞️ Village_TD: Demo Video",
+            demoLink1: "https://www.youtube.com/watch?v=jc889SYwGKk", 
+            demoName2: "🕹️ Village_TD: Source Code",
+            demoLink2: "https://github.com/yuchengtu2002/Village_TD"
           },
           {
             img: "ece297.png",
@@ -47,16 +61,7 @@ export default function Project() {
               "GUI Design",
             ],
           },
-          {
-            img: "utxr.png",
-            title: "Club Website",
-            time: "2023.8 - 2023.9",
-            descriptions: [
-              "In a group of 2, developed a Full-Stack website for a club using HTML&CSS, React, Nodejs, and JavaScript.",
-              "Supported features such as user registration, login, online forms with email confirmation, and posting management.",
-            ],
-            tags: ["Javascipt", "Nodejs", "React", "HTML&CSS", "Web Development","Full-Stack"],
-          },
+          
           {
             img: "fpga.jpeg",
             title: "FPGA-based 24 Game",
@@ -66,9 +71,9 @@ export default function Project() {
               "Integrated multiple interfaces and outputs, including VGA display, keyboard input and audio output.",
             ],
             tags: ["Verilog", "ModelSim", "Quartus", "Digital Design"],
-            demoName1: "Demo Video: 24 Game",
+            demoName1: "🎞️ 24 Game: Demo Video ",
             demoLink1: "https://www.youtube.com/watch?v=mSOiU0JPdlo", 
-            demoName2: "Source Code",
+            demoName2: "🕹️ 24 Game: Source Code",
             demoLink2: "https://github.com/yuchengtu2002/fpga_24Game"
           },
           {
@@ -81,8 +86,18 @@ export default function Project() {
               "Enabled seamless audio manipulation with user-friendly controls, allowing dynamic effect changes.",
             ],
             tags: ["C", "Assembly Language", "Hardware Integration", "Digital Design"],
-            demoName1: "Source Code",
+            demoName1: "📁 Sound Processor: Source Code",
             demoLink1: "https://github.com/yuchengtu2002/Audio_Processor", 
+          },
+          {
+            img: "utxr.png",
+            title: "Club Website",
+            time: "2023.8 - 2023.9",
+            descriptions: [
+              "In a group of 2, developed a Full-Stack website for a club using HTML&CSS, React, Nodejs, and JavaScript.",
+              "Supported features such as user registration, login, online forms with email confirmation, and posting management.",
+            ],
+            tags: ["Javascipt", "Nodejs", "React", "HTML&CSS", "Web Development","Full-Stack"],
           },
         ].map((item, index) => (
           <ProjectCard

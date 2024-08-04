@@ -23,14 +23,6 @@ export default function ProjectCard(props) {
             </p>
           ))}
       </div>
-      <div className="project-tags">
-        {props.tags &&
-          props.tags.map((tag, index) => (
-            <span key={index} className="project-tag">
-              {"#" + tag}
-            </span>
-          ))}
-      </div>
       <div className="project-demo">
         {props.demoName1 && (
           <a
@@ -55,6 +47,15 @@ export default function ProjectCard(props) {
           </a>
         )}
       </div>
+      <div className="project-tags">
+        {props.tags &&
+          props.tags.map((tag, index) => (
+            <span key={index} className="project-tag">
+              {"#" + tag}
+            </span>
+          ))}
+      </div>
+
     </div>
   );
 }
