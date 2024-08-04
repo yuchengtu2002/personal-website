@@ -33,7 +33,7 @@ export default function Project() {
             title: "Village Tower Defense Game",
             time: "2024.7",
             descriptions: [
-              "Developed a strategic tower defense game using C++ and SDL2 libraries. Implemented various types of towers and enemies, along with wave progression and resource management systems.",
+              "Developed a strategic tower defense game using C++ and SDL2 libraries. Implemented various types of towers and enemies, incorporated RPG component, along with wave progression and resource management systems.",
               "Designed and integrated custom graphics and animations. Built an efficient game loop to handle real-time updates, collision detection, and rendering, ensuring smooth gameplay performance.",
             ],
             tags: ["Javascipt", "Nodejs", "React", "HTML&CSS", "Web Development","Full-Stack"],
@@ -44,12 +44,13 @@ export default function Project() {
           },
           {
             img: "ece297.png",
-            title: "Geographic Information System - Map Application",
+            title: "Geographic Information System - Map Application: Guruguru Map",
             time: "2024.1 - 2024.4",
             descriptions: [
               "Group project ( ECE297: Communication and Design ).",
               "In a group of 3, developed a OpenStreetMap-based map application using C++ and Glade framework. Responsible for code generation, testing, and debugging, plus designing the user interface.",
               "Developed a solution to the travelling courier problem using Genetic Algorithm. Solution quality ranked 1/77 in the course.",
+
             ],
             tags: [
               "C++",
@@ -60,6 +61,8 @@ export default function Project() {
               "APIs",
               "GUI Design",
             ],
+            demoName1: "📁 Guruguru Map: Detail Page",
+            demoLink1: "https://github.com/yuchengtu2002/guruguru_map",
           },
           
           {
@@ -96,8 +99,13 @@ export default function Project() {
             descriptions: [
               "In a group of 2, developed a Full-Stack website for a club using HTML&CSS, React, Nodejs, and JavaScript.",
               "Supported features such as user registration, login, online forms with email confirmation, and posting management.",
+              "Note: Although the functionalities are fully implemented, the content of the website is not completed due to the club status. The backend of the website is now closed.",
             ],
             tags: ["Javascipt", "Nodejs", "React", "HTML&CSS", "Web Development","Full-Stack"],
+            demoName1: "🔗 Link to the website ",
+            demoLink1: "xtendedreality.github.io", 
+            demoName2: "📁 Club Website: Source code",
+            demoLink2: "https://github.com/yuchengtu2002/utxtendedreality.github.io"
           },
         ].map((item, index) => (
           <ProjectCard

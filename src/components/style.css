@@ -479,7 +479,7 @@
 .skill-footer {
     font-family: "Forum", serif;
     font-weight: 600;
-    font-size: 1.5rem; 
+    font-size: 1.25rem; 
     color: #2d3748; 
     margin-top: 2rem; 
 }
@@ -536,6 +536,126 @@
     color: #4a5568; 
     padding-top: 0.5rem; 
 }
+
+/*------------------CERTIFICATE----------------*/
+
+
+.certificate-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+  text-align: center;
+  line-height: 1.5;
+  font-family: "Forum", serif;
+  width: 90%;
+  max-width: 1280px;
+  padding: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+  border-radius: 0.75rem;
+  border: 1px solid #c7d3e4;
+}
+
+.certificate-heading {
+  font-weight: 900;
+  padding-bottom: 1rem;
+  font-size: 2rem; /* Slightly larger for emphasis */
+  color: #d69e2e; 
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: "Forum", serif;
+  padding: 0.5rem 1rem;
+}
+
+.certificateContent-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.certificate-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #c7d3e4;
+}
+
+.certificate-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.certificate-content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.certificate-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+  color: #2d3748;
+}
+
+.certificate-time {
+  color: #616c7a;
+  font-size: 1rem;
+  margin: 0.25rem 0;
+}
+
+.certificate-description {
+  color: #4a5568;
+  font-size: 1.1rem;
+  text-align: left;
+  margin-top: 0.5rem;
+  line-height: 1.5;
+  padding-left: 1rem;
+}
+
+.certificate-description ul {
+  list-style-type: disc;
+  padding-left: 1rem;
+}
+
+
+.download-certificate{
+  font-family: "Forum", serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #d69e2e; 
+  margin-top: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .certificateContent-container {
+    flex-direction: row;
+    align-items: flex-start; /* Align content horizontally at the top */
+    text-align: left;
+    width: 100%;
+  }
+
+  .certificate-img {
+    margin-right: 1.5rem;
+    max-width: 50%;
+  }
+
+  .certificate-content {
+    max-width: 50%;
+  }
+}
+
+
+
+
+/*------------------EXPERIENCE----------------*/
+
   
 .experience-container {
     font-family: "Forum", serif;
@@ -621,12 +741,15 @@
     color: #4a5568; 
     margin-top: 0.5rem; 
 }
-  
+
+
+/*------------------QUOTE----------------*/
 .quote-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
     margin: 0 auto;
     padding: 1rem;
     max-width: 1200px;
@@ -644,8 +767,8 @@
 }
   
 .quote-content {
-    width: 83.333333%; 
-    max-width: 83.333333%; 
+    width: 90%; 
+    max-width: 90%; 
     margin: 0 auto;
 }
   

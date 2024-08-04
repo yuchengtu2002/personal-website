@@ -4,6 +4,7 @@ import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Project from "./components/Project";
+import Certificate from "./components/Certificate";
 import Skill from "./components/Skill";
 import Quote from "./components/Quote";
 import LazyLoad from "react-lazyload";
@@ -15,11 +16,13 @@ function App() {
       <Navbar />
       <AboutMe />
       <Education />
+      <Experience />
       <LazyLoad height={500}>
         <Project />
       </LazyLoad>
       <Skill />
-      <Experience />
+      <Certificate />
+
       <Quote />
       <Footer />
     </Router>
