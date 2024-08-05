@@ -559,7 +559,7 @@
   padding-top: 0.5rem;
 }
 
-/* New overlay styles */
+/* Overlay styles */
 .skill-overlay {
   position: fixed;
   top: 0;
@@ -570,7 +570,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 30; /* Ensure it's on top */
+  z-index: 30;
 }
 
 .skill-overlay-content {
@@ -600,21 +600,36 @@
 .skill-overlay-icon {
   font-size: 4rem;
   color: #718096;
-  margin-bottom: 1rem;
 }
 
 .skill-overlay-title {
   font-weight: bold;
   font-size: 1.75rem;
   color: #2d3748;
-  margin-bottom: 1rem;
 }
 
 .skill-overlay-description {
   color: #4a5568;
-  font-size: 1rem;
+  font-size: 1.15rem;
   line-height: 1.5;
+  text-align: left; /* Align text to left for readability */
 }
+
+.skill-overlay-description ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.skill-overlay-description ul li {
+  margin-bottom: 0.5rem;
+}
+
+.skill-overlay-description p {
+  margin-bottom: 1rem; /* Space between paragraphs */
+}
+
 
 @media (min-width: 768px) {
   .skill-grid {
@@ -629,6 +644,7 @@
     gap: 2.5rem;
   }
 }
+
 
 
 
@@ -694,7 +710,7 @@
 
 .certificate-title {
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   margin: 0.5rem 0;
   color: #2d3748;
 }
