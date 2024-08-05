@@ -20,9 +20,8 @@ function App() {
       <LazyLoad height={500}>
         <Project />
       </LazyLoad>
-      <Skill />
       <Certificate />
-
+      <Skill />
       <Quote />
       <Footer />
     </Router>

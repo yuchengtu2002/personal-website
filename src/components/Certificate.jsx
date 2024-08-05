@@ -17,7 +17,7 @@ export default function Certificate() {
             <p className="certificate-time">2024.7</p>
             <a
                 className="download-certificate"
-                href="Resume.pdf"
+                href="IBM_AI_certificate.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
