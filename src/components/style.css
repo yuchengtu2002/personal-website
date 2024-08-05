@@ -274,10 +274,19 @@
   margin-bottom: 0px;
 }
 
+.game-type {
+  font-size: 1.1rem; /* lg */
+  font-weight: 600;
+  margin: 1rem;
+  color: #96a2b5; /* gray-700 */
+}
+
 .game-subtitle {
   font-size: 1.1rem; /* lg */
   font-weight: 600;
+  margin-top: 0rem;
   margin-bottom: 1rem; /* reduce margin-bottom */
+  color: #d69e2e;
 }
 
 .game-images {
@@ -304,6 +313,15 @@
   .description {
     font-size: 1.25rem;
   }
+}
+
+.game-overlay-ending {
+  font-family: "Forum", serif;
+  font-weight: bolder;
+  padding: 1rem; 
+  font-size: 1.25em;
+  color: #4f4c47; 
+  margin-bottom: 0px;
 }
 
 

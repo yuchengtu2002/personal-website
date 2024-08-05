@@ -31,6 +31,16 @@ export default function Navbar() {
             <li className="nav-item">
               <HashLink
                 smooth
+                to="#experience"
+                scroll={(el) => scrollWithOffset(el)}
+                className="nav-link"
+              >
+                <span className="nav-text">💼 Work</span>
+              </HashLink>
+            </li>
+            <li className="nav-item">
+              <HashLink
+                smooth
                 to="#project"
                 scroll={(el) => scrollWithOffset(el)}
                 className="nav-link"
@@ -46,16 +56,6 @@ export default function Navbar() {
                 className="nav-link"
               >
                 <span className="nav-text">🌟 Skills</span>
-              </HashLink>
-            </li>
-            <li className="nav-item">
-              <HashLink
-                smooth
-                to="#experience"
-                scroll={(el) => scrollWithOffset(el)}
-                className="nav-link"
-              >
-                <span className="nav-text">💼 Work Exp</span>
               </HashLink>
             </li>
             <li className="nav-item">
