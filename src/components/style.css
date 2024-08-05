@@ -1,3 +1,10 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+  
   /*------------------NAVBAR----------------*/
 
   .navbar {
@@ -11,7 +18,7 @@
     align-items: center;
     justify-content: space-between; 
     padding: 0rem 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 1px rgba(0, 0, 0, 0.1);
     font-family: "Forum", serif;
   }
 
@@ -100,73 +107,206 @@
 
   /*------------------ABOUT_ME----------------*/
 
+/* About Me CSS */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  margin: 0 auto;
+  margin-top: 1.75rem; 
+  text-align: center;
+  font-family: "Forum", serif;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.about-content {
+  margin-top: 4.75rem; 
+  margin-bottom: 1.75rem; 
+}
+
+.avatar {
+  margin: 0 auto;
+}
+
+.avatar-image {
+  width: 16rem; 
+  height: 16rem; 
+  border-radius: 25%;
+}
+
+.greeting {
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-top: 2rem; 
+  padding-bottom: 1.5rem; 
+  font-size: 1.875rem;
+  color: #d69e2e; 
+  letter-spacing: 1px;
+}
+
+.introduction {
+  font-family: "Forum", serif;
+  font-weight: 600;
+  font-size: 1.5rem; 
+  color: #2d3748; 
+  margin: 1rem; 
+}
+
+.description {
+  width: 100%;
+  max-width: 75%; 
+  margin: 0 auto;
+  color: #718096; 
+  font-size: 1.1rem; 
+  line-height: 1.75rem; 
+  padding-bottom: 1rem;
+}
+
+.clickable-text {
+  cursor: pointer;
+  color: #d69e2e; /* Highlight color */
+  text-decoration: underline; /* Underline text */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.clickable-text:hover {
+  color: #0056b3; /* Hover color */
+}
+
+.contact-bar {
+  padding: 1rem;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info {
+  font-size: 1rem;
+  color: #2d3748;
+}
+
+.contact-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.font-bold {
+  font-weight: bold;
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+/* Overlay CSS */
+.game-overlay {
+  font-family: "Forum", serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 30;
+}
+
+.game-overlay-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 90%; /* Set max width to 60% */
+  max-height: 70%;
+  width: 800px;
+  overflow-y: auto; /* Allow vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  position: relative;
+  text-align: center;
+}
+
+.game-overlay-close {
+  position: absolute; /* Keep it absolute but adjust positioning */
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  z-index: 40; /* Ensure it's above the scrollable content */
+}
+
+
+.game-overlay-title {
+  font-family: "Forum", serif;
+  font-weight: bolder;
+  padding-bottom: 1rem; /* 8px converted to rem */
+  font-size: 1.875rem; /* 3xl */
+  color: #d69e2e; /* yellow-500 */
+  margin-bottom: 0px;
+}
+
+.game-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.game-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.game-title {
+  font-size: 1.3rem; /* lg */
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.game-subtitle {
+  font-size: 1.1rem; /* lg */
+  font-weight: 600;
+  margin-bottom: 1rem; /* reduce margin-bottom */
+}
+
+.game-images {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.game-image {
+  max-width: 100%;
+  max-height: 305px;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
   .about-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 1rem;
-    margin: 0 auto;
-    margin-top: 1.75rem; 
-    text-align: center;
-    font-family: "Forum", serif;
-    width: 100%;
-    max-width: 1200px;
-  }
-
-  .about-content {
-    margin-top: 4.75rem; 
-    margin-bottom: 1.75rem; 
-  }
-
-  .avatar {
-    margin: 0 auto;
-  }
-
-  .avatar-image {
-    width: 16rem; 
-    height: 16rem; 
-    border-radius: 25%;
-  }
-
-  .greeting {
-    font-weight: 900;
-    text-transform: uppercase;
-    padding-top: 2rem; 
-    padding-bottom: 1.5rem; 
-    font-size: 1.875rem;
-    color: #d69e2e; 
-    letter-spacing: 1px;
-
-  }
-
-  .introduction {
-    font-family: "Forum", serif;
-    font-weight: 600;
-    font-size: 1.5rem; 
-    color: #2d3748; 
-    margin: 1rem; 
+    width: 60%;
   }
 
   .description {
-    width: 100%;
-    max-width: 75%; 
-    margin: 0 auto;
-    color: #718096; 
-    font-size: 1.1rem; 
-    line-height: 1.75rem; 
-    padding-bottom: 1rem;
+    font-size: 1.25rem;
   }
+}
 
 
-  @media (min-width: 768px) {
-    .about-container{
-      width: 60%;
-    }
-
-    .description{
-      font-size: 1.25rem; 
-    }
-  }
 
   /*------------------CONTACT----------------*/
 
@@ -386,7 +526,7 @@
   
   .project-image-container {
     width: 100%;
-    height: 300px; 
+    height: 180px; 
     overflow: hidden;
     position: relative; 
   }
@@ -452,7 +592,7 @@
     text-align: left;
 }
   
-@media (min-width: 1024px) {
+@media (min-width: 600px) {
     .project-card {
         margin: 0.5rem; 
         margin-left: 1.5rem; 
@@ -461,6 +601,11 @@
   
     .project-container {
         padding: 1rem;
+    }
+
+    .project-image-container {
+
+        height: 300px; 
     }
 }
 
@@ -691,7 +836,19 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  overflow-x: hidden; /* Ensure no overflow */
 }
+
+@media (min-width: 1024px) {
+  .certificateContent-container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center; /* Align items within the center */
+    text-align: left;
+    overflow-x: hidden; /* Ensure no overflow */
+  }
+}
+
 
 .certificate-img {
   width: 100%;
@@ -703,12 +860,14 @@
   border: 1px solid #c7d3e4;
 }
 
-.certificate-img img {
+.certificate-img img,
+.project-image {
   width: 100%;
   height: auto;
-  display: block;
-  border-radius: 0.5rem;
+  max-width: 100%;
+  object-fit: cover; /* Maintain aspect ratio */
 }
+
 
 .certificate-content {
   padding: 1rem;
@@ -1015,4 +1174,30 @@
         flex-direction: row; 
         gap: 3rem; 
     }
+}
+
+
+.navbar,
+.footer {
+  overflow-x: hidden; /* Prevent overflow */
+}
+
+.project-image-container,
+.education-image {
+  overflow: hidden;
+}
+
+.project-cards,
+.skill-grid,
+.footer-links {
+  overflow-x: hidden; 
+}
+
+.project-card,
+.skill-card {
+  max-width: 100%;
+}
+
+.contact-container {
+  overflow-x: hidden;
 }
