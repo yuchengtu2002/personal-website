@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/yuchengtu2002/personal-website/static/css/main.980fa41f.css",
+    "main.js": "/yuchengtu2002/personal-website/static/js/main.0fb60a0b.js",
+    "index.html": "/yuchengtu2002/personal-website/index.html",
+    "main.980fa41f.css.map": "/yuchengtu2002/personal-website/static/css/main.980fa41f.css.map",
+    "main.0fb60a0b.js.map": "/yuchengtu2002/personal-website/static/js/main.0fb60a0b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.980fa41f.css",
+    "static/js/main.0fb60a0b.js"
+  ]
+}
