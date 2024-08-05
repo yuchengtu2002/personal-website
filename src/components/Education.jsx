@@ -27,7 +27,7 @@ export default function Education() {
                 <div className="education-subtitle"> Awards: </div>
                 <ul>
                   <li>
-                    <b style={{ color: 'black' }}>「University of Toronto Excellence Award 」</b> (2024)
+                    <b style={{ color: 'black' }}>「University of Toronto Excellence Award」</b> (2024)
                   </li>
                   <li>
                     <b style={{ color: 'black' }}>「Dean's Honour List」</b> (All semesters at UofT)

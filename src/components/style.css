@@ -109,6 +109,7 @@
     margin-top: 3.75rem; 
     text-align: center;
     font-family: "Forum", serif;
+    width: 100%;
     max-width: 1200px;
   }
 
@@ -151,9 +152,20 @@
     max-width: 75%; 
     margin: 0 auto;
     color: #718096; 
-    font-size: 1.3rem; 
+    font-size: 1.1rem; 
     line-height: 1.75rem; 
     padding-bottom: 1rem;
+  }
+
+
+  @media (min-width: 768px) {
+    .about-container{
+      width: 60%;
+    }
+
+    .description{
+      font-size: 1.25rem; 
+    }
   }
 
   /*------------------CONTACT----------------*/
@@ -164,7 +176,6 @@
   }
   
   .contact-container {
-    max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -224,12 +235,13 @@
     align-items: center;
     justify-content: center;
     font-family: "Forum", serif;
-    margin: 1rem auto; /* 24px converted to rem */
+    margin: 1rem auto; 
     padding: 0 1rem;
     text-align: center;
     line-height: 1.5;
     padding-top: 2rem;
     max-width: 1280px;
+    width: 100%;
   }
 
   .education-heading {
@@ -249,6 +261,8 @@
     .education-cards {
       width: 80.333333%; /* 10/12 converted to percentage */
     }
+
+    
   }
 
   /*------------------EDUCATION_CARD----------------*/
@@ -256,8 +270,9 @@
   .education-card {
     display: flex;
     background-color: #f5f9fb; /* gray-100 */
+    border: 1px solid #dce4f0;
     border-radius: 0.75rem; /* rounded-xl */
-    padding: 2rem; /* 8px converted to rem */
+    padding: 1rem; /* 8px converted to rem */
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
     margin-bottom: 2rem; /* 6px converted to rem */
     flex-direction: column;
@@ -280,7 +295,7 @@
   }
   
   .education-content {
-    text-align: center;
+    text-align: left;
   }
   
   @media (min-width: 768px) {
@@ -451,91 +466,131 @@
 }
   
 .skill-container {
-    font-family: "Forum", serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem auto 3rem auto; 
-    padding: 0 1rem; 
-    text-align: center;
-    line-height: 1.5;
-    max-width: 1280px;
+  font-family: "Forum", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto 3rem auto; 
+  padding: 0 1rem; 
+  text-align: center;
+  line-height: 1.5;
+  max-width: 1280px;
 }
-  
+
 .skill-heading {
-    font-weight: 900;
-    font-size: 1.875rem; 
-    color: #d69e2e; 
-    margin-bottom: 1.5rem; 
+  font-weight: 900;
+  font-size: 1.875rem; 
+  color: #d69e2e; 
+  margin-bottom: 1.5rem; 
 }
-  
+
 .skill-sections {
-    width: 83.333333%; 
-    max-width: 91.666667%; 
-    margin: 0 auto;
+  width: 83.333333%; 
+  max-width: 91.666667%; 
+  margin: 0 auto;
 }
-  
+
 .skill-footer {
-    font-family: "Forum", serif;
-    font-weight: 600;
-    font-size: 1.25rem; 
-    color: #2d3748; 
-    margin-top: 2rem; 
+  font-family: "Forum", serif;
+  font-weight: 600;
+  font-size: 1.25rem; 
+  color: #2d3748; 
+  margin-top: 2rem; 
 }
-  
+
 .skill-section-title {
-    font-family: "Forum", serif;
-    font-weight: 900;
-    font-size: 1.5rem;
-    text-align: center;
-    color: #2d3748; 
-    margin-bottom: 5rem;
+  font-family: "Forum", serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #2d3748; 
+  margin-bottom: 5rem;
 }
-  
+
 .skill-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-    justify-content: center;
-    gap: 3rem; 
-    margin-top: 1rem; 
-    margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+  justify-content: center;
+  gap: 3rem; 
+  margin-top: 1rem; 
+  margin-bottom: 5rem;
 }
-  
+
 .skill-card {
-    margin: 0 auto; 
-    padding: 1rem; 
-    background-color: #f7fafc; 
-    border-radius: 0.5rem; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    transition: background-color 0.3s ease, transform 0.3s ease; 
-    text-align: center; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 150px; 
-    height: 150px; 
+  margin: 0 auto; 
+  padding: 1rem; 
+  background-color: #f7fafc; 
+  border-radius: 0.5rem; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px; 
+  height: 150px; 
 }
-  
+
 .skill-card:hover {
-    background-color: #f1f1f1; 
-    transform: translateY(-5px); 
+  background-color: #f1f1f1; 
+  transform: translateY(-5px); 
 }
-  
+
 .skill-icon {
-    color: #718096; 
-    margin-bottom: 0.5rem; 
+  color: #718096; 
+  margin-bottom: 0.5rem; 
 }
-  
+
 .custom-icon-size {
-    font-size: 3rem; 
+  font-size: 3rem; 
 }
-  
+
 .skill-name {
-    color: #4a5568; 
-    padding-top: 0.5rem; 
+  color: #4a5568; 
+  padding-top: 0.5rem; 
 }
+
+/* Media queries to adjust card sizes on smaller screens */
+@media (max-width: 768px) {
+.skill-grid {
+  grid-template-columns: repeat(2, minmax(100px, 1fr)); /* 2 cards per row */
+  gap: 1.5rem; /* Smaller gap */
+}
+
+.skill-card {
+  width: 120px;  /* Decrease card width */
+  height: 120px; /* Decrease card height */
+  padding: 0.5rem;
+}
+
+.custom-icon-size {
+  font-size: 2.5rem; /* Decrease icon size */
+}
+
+.skill-section-title {
+  margin-bottom: 3rem; /* Adjust section title margin */
+}
+}
+
+@media (max-width: 480px) {
+.skill-grid {
+  grid-template-columns: repeat(2, minmax(80px, 1fr)); /* Ensure 2 cards per row */
+  gap: 1rem; /* Smaller gap */
+}
+
+.skill-card {
+  width: 100px;  /* Further decrease card width */
+  height: 100px; /* Further decrease card height */
+  padding: 0.5rem;
+}
+
+.custom-icon-size {
+  font-size: 2rem; /* Further decrease icon size */
+}
+}
+
 
 /*------------------CERTIFICATE----------------*/
 
@@ -664,8 +719,8 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    padding: 1rem;
-    max-width: 1200px;
+    max-width: 1240px;
+    width: 100%;
 }
   
 .experience-heading {
@@ -683,11 +738,12 @@
   
 .education-card {
     display: flex;
-    background-color: #f7fafc; 
+    background-color: #f5f9fb; 
+    border: 1px solid #dce4f0;
     border-radius: 0.75rem; 
-    padding: 2rem; 
+    padding: 1rem; /* 8px converted to rem */
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
-    margin-bottom: 2.5rem; 
+    margin-bottom: 2rem; 
     flex-direction: column;
     align-items: center;
     line-height: 1.5rem;
@@ -699,6 +755,7 @@
         padding: 0;
     }
 }
+
   
 .education-image {
     width: 10rem; 
@@ -706,18 +763,6 @@
     border-radius: 25%;
     margin: 1.5rem; 
     display: block;
-}
-  
-.education-content {
-    padding: 2rem; 
-    text-align: center;
-}
-  
-@media (min-width: 768px) {
-    .education-content {
-        padding: 2rem; 
-        text-align: left;
-    }
 }
   
 .education-title {
@@ -740,6 +785,26 @@
 .education-description {
     color: #4a5568; 
     margin-top: 0.5rem; 
+    font-size: 1rem;
+}
+
+  
+@media (min-width: 768px) {
+.education-title {
+    font-size: 1.3rem; 
+
+}
+  
+.education-role {
+    font-size: 1.125rem; 
+
+}
+  
+
+.education-description {
+  font-size: 1.125rem; 
+}
+
 }
 
 
@@ -786,6 +851,7 @@
     font-size: 1.4rem; 
     padding-left: 0.5rem; 
     padding-right: 0.5rem; 
+    letter-spacing: 0.5px;
     text-align: center;
 }
   
@@ -810,7 +876,7 @@
 .download-resume {
     font-family: "Forum", serif;
     font-weight: 600;
-    font-size: 1.5rem; 
+    font-size: 1.4rem; 
     color: #2d3748; 
     margin-top: 2rem; 
 }

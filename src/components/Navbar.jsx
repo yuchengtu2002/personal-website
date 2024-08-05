@@ -25,7 +25,7 @@ export default function Navbar() {
                 scroll={(el) => scrollWithOffset(el)}
                 className="nav-link"
               >
-                <span className="nav-text">🎓 Education Backgrounds</span>
+                <span className="nav-text">🎓 Education</span>
               </HashLink>
             </li>
             <li className="nav-item">
@@ -55,7 +55,7 @@ export default function Navbar() {
                 scroll={(el) => scrollWithOffset(el)}
                 className="nav-link"
               >
-                <span className="nav-text">💼 Work Experience</span>
+                <span className="nav-text">💼 Work Exp</span>
               </HashLink>
             </li>
             <li className="nav-item">

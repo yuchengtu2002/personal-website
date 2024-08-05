@@ -99,7 +99,7 @@ export default function Project() {
             descriptions: [
               "In a group of 2, developed a Full-Stack website for a club using HTML&CSS, React, Nodejs, and JavaScript.",
               "Supported features such as user registration, login, online forms with email confirmation, and posting management.",
-              "Note: Although the functionalities are fully implemented, the content of the website is not completed due to the club status. The backend of the website is now closed.",
+              "**Note**: Although the functionalities were fully implemented, the content of the website is not completed due to the club status. The backend of the website is now closed.",
             ],
             tags: ["Javascipt", "Nodejs", "React", "HTML&CSS", "Web Development","Full-Stack"],
             demoName1: "🔗 Link to the website ",

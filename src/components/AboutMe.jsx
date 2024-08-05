@@ -23,10 +23,10 @@ export default function AboutMe() {
             I'm Yucheng Tu
           </p>
           {[
-            "As a third-year Computer Engineering student at the University of Toronto, ",
-            "I am passionate about transforming ideas into code and making innovative solutions a reality",
-            "My focus is on the fields of artificial intelligence, software, and deep learning." ,
-            " In my free time, I enjoy playing badminton and Nintendo games, as well as exploring new technologies.",
+            "Welcome to my personal space on the web!",
+            "I am a third-year Computer Engineering student at the University of Toronto, passionate about transforming ideas into code and turning innovative solutions into reality.",
+            "My academic focus lies in artificial intelligence, software development, and deep learning, where I strive to push the boundaries of technology.",
+            "Outside of my studies, I enjoy playing badminton, diving into Nintendo games, and exploring the latest advancements in technology."
           ].map((item, index) => {
             return (
               <p key={index} className="description">

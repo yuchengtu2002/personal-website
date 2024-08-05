@@ -20,7 +20,7 @@ export default function Experience() {
             img: "uoft.jpg",
             role: "Summer Research Intern - iMed Lab",
             title: "Univeristy of Toronto",
-            time: "2024.5-2024.9",
+            time: "2024.5 - 2024.9 (Full-time) | 2024.9 - Present (Part-time)",
             descriptions: [
               "Integrated PyTorch and machine learning models that are capable of classifying swallowing events as normal or abnormal, then quantifying swallowing severity on a scalable metric.",
               "Created a user-friendly PC application using Python and the PyQt framework to connect with the HRCA device for real-time monitoring and analysis of swallowing signals.",
