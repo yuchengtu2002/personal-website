@@ -443,7 +443,6 @@
   
 .project-demo {
     margin: 0.8rem 0; 
-    padding-left: 1.5rem; 
     color: #4a5568; 
 }
   
@@ -486,7 +485,15 @@
   font-weight: 900;
   font-size: 1.875rem;
   color: #d69e2e;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0px;
+}
+
+.skill-subheading {
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: #d69e2e;
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
 }
 
 .skill-sections {
@@ -578,9 +585,9 @@
   padding: 2rem;
   border-radius: 0.75rem;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  max-width: 90%;
-  max-height: 90%;
-  width: 600px;
+  max-width: 600px;
+  max-height: 100%;
+  width: 70%;
   overflow-y: auto;
   position: relative;
   text-align: center;
@@ -610,7 +617,7 @@
 
 .skill-overlay-description {
   color: #4a5568;
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   text-align: left; /* Align text to left for readability */
 }

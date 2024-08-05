@@ -13,6 +13,7 @@ export default function SkillOverlay({ skill, onClose }) {
         <h2 className="skill-overlay-title">{skill.name}</h2>
         <div className="skill-overlay-description">
           <p>{skill.details.description}</p>
+          <p>I used it for:</p>
           <ul>
             {skill.details.useCases.map((useCase, index) => (
               <li key={index}>{useCase}</li>
