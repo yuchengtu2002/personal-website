@@ -444,13 +444,7 @@
     }
   }
   
-  .education-image {
-    width: 10rem; 
-    height: 10rem; 
-    border-radius: 25%;
-    margin: 1.5rem; 
-    display: block;
-  }
+
   
   .education-content {
     text-align: left;
@@ -463,32 +457,6 @@
     }
   }
   
-  .education-title {
-    font-size: 1.3rem; 
-    font-weight: 600;
-    margin-bottom: 0.25rem;
-  }
-  
-  .education-subtitle {
-    font-size: 1.125rem; 
-    font-weight: 600;
-    margin-top: 0;
-    margin-bottom: 0.25rem; 
-  }
-  
-  .education-time {
-    margin-top: 0; 
-    font-size: 1.1rem; 
-    color: #6f7882; 
-    margin-bottom: 0.25rem;
-  }
-  
-  .education-description {
-    color: #4a5568; 
-    font-size: 1.1rem; 
-    margin-top: 0.25rem; 
-    letter-spacing: 0.3px;
-  }
   
   /*------------------PROJECT----------------*/
 
@@ -954,99 +922,111 @@
 
   
 .experience-container {
-    font-family: "Forum", serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 1240px;
-    width: 100%;
+  font-family: "Forum", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1240px;
+  width: 100%;
 }
-  
+
 .experience-heading {
-    font-weight: 900;
-    padding-bottom: 2rem;
-    font-size: 1.875rem; 
-    color: #d69e2e; 
+  font-weight: 900;
+  padding-bottom: 2rem;
+  font-size: 1.875rem;
+  color: #d69e2e;
 }
-  
+
 .experience-cards {
-    width: 83.333333%; 
-    max-width: 83.333333%; 
-    margin: 0 auto;
+  width: 83.333333%;
+  max-width: 83.333333%;
+  margin: 0 auto;
 }
-  
-.education-card {
-    display: flex;
-    background-color: #f5f9fb; 
-    border: 1px solid #dce4f0;
-    border-radius: 0.75rem; 
-    padding: 1rem; 
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
-    margin-bottom: 2rem; 
-    flex-direction: column;
-    align-items: center;
-    line-height: 1.5rem;
+
+.education-card,
+.experience-card { 
+  display: flex;
+  background-color: #f5f9fb;
+  border: 1px solid #dce4f0;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5rem;
 }
-  
+
 @media (min-width: 768px) {
-    .education-card {
-        flex-direction: row;
-        padding: 0;
-    }
+  .education-card,
+  .experience-card { 
+      flex-direction: row;
+      padding: 0;
+  }
 }
 
-  
-.education-image {
-    width: 10rem; 
-    height: 10rem; 
-    border-radius: 25%;
-    margin: 1.5rem; 
-    display: block;
-}
-  
-.education-title {
-    font-size: 1.3rem; 
-    font-weight: 600;
-}
-  
-.education-role {
-    font-size: 1.125rem; 
-    font-style: italic;
-    color: #7c8794; 
-    margin: 0.25rem 0; 
-}
-  
-.education-time {
-    color: #8994a3; 
-    margin-bottom: 0.5rem; 
-}
-  
-.education-description {
-    color: #4a5568; 
-    margin-top: 0.5rem; 
-    font-size: 1rem;
+.education-image,
+.experience-image { 
+  width: 100%; 
+  max-width: 10rem;
+  height: auto; 
+  border-radius: 25%;
+  margin: 1.5rem;
+  display: block;
+  object-fit: cover; 
 }
 
-  
+.education-title,
+.experience-title { 
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.education-role,
+.experience-role { 
+  font-size: 1.125rem;
+  font-style: italic;
+  color: #7c8794;
+  margin: 0.25rem 0;
+}
+
+.education-time,
+.experience-time { 
+  color: #8994a3;
+  margin-bottom: 0.5rem;
+}
+
+.education-description,
+.experience-description { 
+  color: #4a5568;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
 @media (min-width: 768px) {
-.education-title {
-    font-size: 1.3rem; 
+  .education-title,
+  .experience-title {
+      font-size: 1.3rem;
+  }
 
-}
-  
-.education-role {
-    font-size: 1.125rem; 
+  .education-image,
+  .experience-image {
+      max-width: 10rem;
+  }
 
-}
-  
+  .education-role,
+  .experience-role {
+      font-size: 1.125rem;
+  }
 
-.education-description {
-  font-size: 1.125rem; 
+  .education-description,
+  .experience-description {
+      font-size: 1.125rem;
+  }
 }
 
-}
 
 
 /*------------------QUOTE----------------*/
