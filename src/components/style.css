@@ -166,13 +166,13 @@
 
 .clickable-text {
   cursor: pointer;
-  color: #d69e2e; /* Highlight color */
-  text-decoration: underline; /* Underline text */
-  transition: color 0.3s ease; /* Smooth color transition */
+  color: #d69e2e; 
+  text-decoration: underline; 
+  transition: color 0.3s ease; 
 }
 
 .clickable-text:hover {
-  color: #0056b3; /* Hover color */
+  color: #0056b3; 
 }
 
 .contact-bar {
@@ -223,17 +223,17 @@
   padding: 2rem;
   border-radius: 0.75rem;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  max-width: 90%; /* Set max width to 60% */
+  max-width: 90%; 
   max-height: 70%;
   width: 800px;
-  overflow-y: auto; /* Allow vertical scrolling */
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y: auto;
+  overflow-x: hidden; 
   position: relative;
   text-align: center;
 }
 
 .game-overlay-close {
-  position: absolute; /* Keep it absolute but adjust positioning */
+  position: absolute;
   top: 1rem;
   right: 1rem;
   font-size: 1.5rem;
@@ -241,16 +241,16 @@
   border: none;
   cursor: pointer;
   color: #333;
-  z-index: 40; /* Ensure it's above the scrollable content */
+  z-index: 40; 
 }
 
 
 .game-overlay-title {
   font-family: "Forum", serif;
   font-weight: bolder;
-  padding-bottom: 1rem; /* 8px converted to rem */
-  font-size: 1.875rem; /* 3xl */
-  color: #d69e2e; /* yellow-500 */
+  padding-bottom: 1rem; 
+  font-size: 1.875rem; 
+  color: #d69e2e; 
   margin-bottom: 0px;
 }
 
@@ -269,23 +269,23 @@
 }
 
 .game-title {
-  font-size: 1.3rem; /* lg */
+  font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 0px;
 }
 
 .game-type {
-  font-size: 1.1rem; /* lg */
+  font-size: 1.1rem; 
   font-weight: 600;
   margin: 1rem;
-  color: #96a2b5; /* gray-700 */
+  color: #96a2b5; 
 }
 
 .game-subtitle {
-  font-size: 1.1rem; /* lg */
+  font-size: 1.1rem; 
   font-weight: 600;
   margin-top: 0rem;
-  margin-bottom: 1rem; /* reduce margin-bottom */
+  margin-bottom: 1rem;
   color: #d69e2e;
 }
 
@@ -357,13 +357,13 @@
   }
 
   .contact-info a {
-    color: black; /* Set email and tel link text color to black */
-    text-decoration: underline; /* Remove underline from email and tel links */
+    color: black; 
+    text-decoration: underline; 
   }
   
   .contact-info a:hover,
   .contact-info a:focus {
-    color: #718096; /* Ensure email and tel link text remains black on hover and focus */
+    color: #718096;
   }
   
   .contact-links {
@@ -377,7 +377,7 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #4a5568; /* Adjust color as needed */
+    color: #4a5568; 
   }
   
   .contact-links a i {
@@ -404,20 +404,20 @@
 
   .education-heading {
     font-weight: bolder;
-    padding-bottom: 1rem; /* 8px converted to rem */
-    font-size: 1.875rem; /* 3xl */
-    color: #d69e2e; /* yellow-500 */
+    padding-bottom: 1rem; 
+    font-size: 1.875rem; 
+    color: #d69e2e; 
   }
 
   .education-cards {
     width: 100%;
-    max-width: 95%; /* 8/12 converted to percentage */
+    max-width: 95%; 
     margin: 0 auto;
   }
 
   @media (min-width: 768px) {
     .education-cards {
-      width: 80.333333%; /* 10/12 converted to percentage */
+      width: 80.333333%; 
     }
 
     
@@ -427,12 +427,12 @@
 
   .education-card {
     display: flex;
-    background-color: #f5f9fb; /* gray-100 */
+    background-color: #f5f9fb; 
     border: 1px solid #dce4f0;
-    border-radius: 0.75rem; /* rounded-xl */
-    padding: 1rem; /* 8px converted to rem */
+    border-radius: 0.75rem; 
+    padding: 1rem; 
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
-    margin-bottom: 2rem; /* 6px converted to rem */
+    margin-bottom: 2rem; 
     flex-direction: column;
     align-items: center;
   }
@@ -445,10 +445,10 @@
   }
   
   .education-image {
-    width: 10rem; /* 40px converted to rem */
-    height: 10rem; /* 40px converted to rem */
+    width: 10rem; 
+    height: 10rem; 
     border-radius: 25%;
-    margin: 1.5rem; /* 6px converted to rem */
+    margin: 1.5rem; 
     display: block;
   }
   
@@ -458,19 +458,19 @@
   
   @media (min-width: 768px) {
     .education-content {
-      padding: 2rem; /* 8px converted to rem */
+      padding: 2rem; 
       text-align: left;
     }
   }
   
   .education-title {
-    font-size: 1.3rem; /* lg */
+    font-size: 1.3rem; 
     font-weight: 600;
-    margin-bottom: 0.25rem; /* reduce margin-bottom */
+    margin-bottom: 0.25rem;
   }
   
   .education-subtitle {
-    font-size: 1.125rem; /* lg */
+    font-size: 1.125rem; 
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 0.25rem; 
@@ -480,7 +480,7 @@
     margin-top: 0; 
     font-size: 1.1rem; 
     color: #6f7882; 
-    margin-bottom: 0.25rem; /* 2px converted to rem */
+    margin-bottom: 0.25rem;
   }
   
   .education-description {
@@ -498,7 +498,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1rem auto; /* Adjusted for margin */
+    margin: 1rem auto; 
     text-align: center;
     line-height: 1.5;
     font-family: "Forum", serif;
@@ -509,14 +509,14 @@
   .project-heading {
     font-weight: 900;
     font-weight: bolder;
-    padding-bottom: 2rem; /* 8px converted to rem */
-    font-size: 1.875rem; /* 3xl */
-    color: #d69e2e; /* yellow-500 */
+    padding-bottom: 2rem; 
+    font-size: 1.875rem; 
+    color: #d69e2e; 
   }
   
   .project-cards {
     width: 100%;
-    max-width: 85%; /* 10/12 converted to percentage */
+    max-width: 85%; 
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -532,7 +532,7 @@
   /*------------------PROJECT_CARD----------------*/
   .project-card {
     max-width: 100%;
-    border-radius: 0.75rem; /* rounded */
+    border-radius: 0.75rem; 
     overflow: hidden;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
     border: 1px solid #c7d3e4; 
@@ -782,7 +782,7 @@
   color: #4a5568;
   font-size: 1.2rem;
   line-height: 1.5;
-  text-align: left; /* Align text to left for readability */
+  text-align: left; 
 }
 
 .skill-overlay-description ul {
@@ -797,7 +797,7 @@
 }
 
 .skill-overlay-description p {
-  margin-bottom: 1rem; /* Space between paragraphs */
+  margin-bottom: 1rem; 
 }
 
 
@@ -841,7 +841,7 @@
 .certificate-heading {
   font-weight: 900;
   padding-bottom: 1rem;
-  font-size: 2rem; /* Slightly larger for emphasis */
+  font-size: 2rem; 
   color: #d69e2e; 
   text-align: center;
   margin-bottom: 1rem;
@@ -854,16 +854,16 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  overflow-x: hidden; /* Ensure no overflow */
+  overflow-x: hidden; 
 }
 
 @media (min-width: 1024px) {
   .certificateContent-container {
     flex-direction: row;
     align-items: flex-start;
-    justify-content: center; /* Align items within the center */
+    justify-content: center; 
     text-align: left;
-    overflow-x: hidden; /* Ensure no overflow */
+    overflow-x: hidden; 
   }
 }
 
@@ -883,7 +883,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  object-fit: cover; /* Maintain aspect ratio */
+  object-fit: cover; 
 }
 
 
@@ -931,7 +931,7 @@
 @media (min-width: 1024px) {
   .certificateContent-container {
     flex-direction: row;
-    align-items: flex-start; /* Align content horizontally at the top */
+    align-items: flex-start; 
     text-align: left;
     width: 100%;
   }
@@ -981,7 +981,7 @@
     background-color: #f5f9fb; 
     border: 1px solid #dce4f0;
     border-radius: 0.75rem; 
-    padding: 1rem; /* 8px converted to rem */
+    padding: 1rem; 
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
     margin-bottom: 2rem; 
     flex-direction: column;
@@ -1197,7 +1197,7 @@
 
 .navbar,
 .footer {
-  overflow-x: hidden; /* Prevent overflow */
+  overflow-x: hidden; 
 }
 
 .project-image-container,
