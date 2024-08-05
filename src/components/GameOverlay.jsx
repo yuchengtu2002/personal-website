@@ -45,7 +45,7 @@ export default function GameOverlay({ onClose }) {
       title: "[PC] Hollow Knight",
       type: "2D Metroidvania action-adventure",
       subtitle: "106% Completion",
-      images: ["games/HollowKnight.png"],
+      images: ["games/hollowKnight.png"],
     },
     {
       title: "[PC] Tunic",
@@ -113,6 +113,7 @@ export default function GameOverlay({ onClose }) {
             </div>
           ))}
         </div>
+        <h2 className="game-overlay-ending"> And some other great games :D</h2>
         <h2 className="game-overlay-ending">Hmmm... That's a lot of games played in the past few years 🤔</h2>
       </div>
     </div>
