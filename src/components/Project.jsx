@@ -17,7 +17,7 @@ export default function Project() {
               "Research Project ( Summer 2024 ). Collaborated with the Hospital and the University of Toronto.",
               "Developed PyTorch deep learning models (CNN, RNN, Transformers, Hybrid) to classify swallowing events. Outperformed state-of-the-art models by 8% in accuracy.",
               "Built a user-friendly PC application with Python and PyQt to connect with the HRCA device for real-time swallowing signal monitoring and analysis.",
-              "Constructing a conference paper for submission to Annual International Conference of the IEEE Engineering in Medicine and Biology Society" 
+              "Constructing a journal paper on artificial intelligence in medicine." 
             ],
             tags: [
               "Python",
