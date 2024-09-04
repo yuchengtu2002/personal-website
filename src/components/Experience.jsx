@@ -32,7 +32,7 @@ export default function Experience() {
             title: "WISEHouse International Education",
             time: "2021.9 - 2022.6",
             descriptions: [
-              "Created a user-friendly PC application using Python and the PyQt framework to connect with the HRCA device for real-time monitoring and analysis of swallowing signals.",
+              "Worked in a transition program to prepare 8 Chinese students aged 12-14 for their study lives in Canada. Set up the structure of the entire 6-month program. Managed and coordinated a teaching team of 6 Canadian teachers",
               "Assisted in designing a 6-month curriculum, communicated with students and families, presented performance evaluations, delivered academic instructions, and introduced Canadian culture.",
             ],
           },
